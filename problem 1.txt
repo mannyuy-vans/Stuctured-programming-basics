@@ -1,0 +1,16 @@
+# include <stdio.h>
+
+int main() {
+    double balance = 4973.50;
+    double monthly_payment = 0.02;
+
+    for (int i = 0; i < 12; i++) {
+        double min_payment = balance * monthly_payment;
+        balance = balance - min_payment;
+        balance = balance - 99.47 
+    }
+
+    printf("Credit card balance after one year: $%.2f\n", balance);
+
+    return 0;
+}
